@@ -72,3 +72,5 @@ crashlytics-build.properties
 
 # Todo files 
 *.todo
+LICENSE.md.meta
+README.md.meta

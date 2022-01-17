@@ -26,7 +26,11 @@ public class SoundEvent
         _source.clip = _sound.audioClip;
         return this;
     }
-
+    
+    /// <summary>
+    /// Start or restart the playback of the SoundEvent.
+    /// Run this after all properties are set
+    /// </summary>
     public void Launch()
     {
         _source.Play();
@@ -43,7 +47,13 @@ public class SoundEvent
     {
         return;
     }
-
+    
+    /// <summary>
+    /// Pan the sound instantly or over time. 
+    /// </summary>
+    /// <param name="stereoPan">Pan position from left (-1.0) to right (1.0)</param>
+    /// <param name="time">Pan automation duration time</param>
+    /// <returns>The same caller SoundEvent for chaining</returns>
     public SoundEvent Pan(float stereoPan, float time)
     {
         // TODO! implement panning over time

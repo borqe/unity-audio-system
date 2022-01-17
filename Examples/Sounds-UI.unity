@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 579331190}
   - component: {fileID: 579331189}
   - component: {fileID: 579331188}
+  - component: {fileID: 579331191}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -423,8 +424,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 6edb822c25cfd48fcb3f4c878d8e22fe, type: 2}
-        m_TargetAssemblyTypeName: borqe.UnitySoundSystem.SoundEventPlayer, Assembly-CSharp
+      - m_Target: {fileID: 579331191}
+        m_TargetAssemblyTypeName: SoundComponent, Assembly-CSharp
         m_MethodName: PlaySound
         m_Mode: 5
         m_Arguments:
@@ -473,6 +474,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579331186}
   m_CullTransparentMesh: 1
+--- !u!114 &579331191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579331186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acdd6e0be4e24e4cacb22324bb84647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1247741122
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,6 +552,32 @@ Transform:
   m_Father: {fileID: 2099792062}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1841388092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1361100120206928164, guid: 92c1c80691d1a4f9fb1362289f7cadf2, type: 3}
+  m_PrefabInstance: {fileID: 1361100122031502104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &1841388093
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841388092}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 7ce858d0f79f646078596dfad4de340e, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 799794652764727699, guid: 7ce858d0f79f646078596dfad4de340e, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -5789970992265615373, guid: 7ce858d0f79f646078596dfad4de340e, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &2026940545
 GameObject:
   m_ObjectHideFlags: 0
